@@ -39,13 +39,24 @@ export default function ShopApp() {
 		setCount(count + 1);
 	}
 
+	function handleRemoveOne() {
+		if (count > 0) {
+			setCount(count - 1);
+		}
+	}
+
 	return (
 		<div className="shop" style={{ padding: '20px', fontFamily: 'sans-serif' }}>
 			<h1>Mini Fruit & Veg Stand</h1>
 
-			<p>
-				{count === 0 ? 'Cart is empty' : `${count} items in cart`}
-			</p>
+			<div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
+				<p style={{ margin: 0 }}>
+					{count === 0 ? 'Cart is empty' : `${count} items in cart`}
+				</p>
+				{count > 0 && (
+					<button onClick={handleRemoveOne}>Remove one</button>
+				)}
+			</div>
 
 			<div className="product-list" style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
 				{products.map((product) => (
