@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Script Basics</title>
+</head>
+
+<body>
+	<script>
+
+		// Global scope
+		const water = "🎐🫧🦋🧿💠🌀"
+
+		// This log is null cuz the h1 doesn't exist yet.
+		console.log("𝗙𝗼𝗹𝗹𝗼𝘄 𝗺𝗲╰┈➤ " + document.querySelector("h1"))
+	</script>
+
+	<h1>JAVASCRIPT 101</h1>
+	<script>
+		console.log("Inline script ran")
+		console.log("01000111 01101111 01101111 01100100 00100000 01100011 01101000 01101111 01101001 01100011 01100101 00101110")
+	</script>
+</body>
+
+<!-- Classical way to import JS -->
+<!-- no import/export, variables can leak to the global scope -->
+<!-- To test on console type "roses" -->
+<script src="legacy.js">
+</script>
+
+<!-- Module type waits for HTML parsing to finish (like defer), -->
+<!-- runs once, has its own scope, and CAN use import/export -->
+<!-- To test on console type "pirate" -->
+<!-- It will return undefined! which is correct! -->
+<script type="module" src="app.js"></script>
+
+<!-- Without src u can do it doo here but not recommended -->
+<script type="module">
+	import openTreasureChest, { heroStats } from "./15_modules_export.js"
+	console.log(`name: ${heroStats.name}`)
+	console.log(`life: ${heroStats.hearts}`)
+	console.log(`Opening a chest: ${openTreasureChest()}`)
+</script>
+
+</html>
