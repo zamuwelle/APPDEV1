@@ -1,0 +1,15 @@
+<button id="changeColorBtn">Change Background</button>
+<p id="message">Initializing connection...</p>
+
+<script>
+	const button = document.getElementById("changeColorBtn");
+	button.addEventListener("click", () => {
+		const color = prompt("Enter terminal color (e.g., lime, black, darkred):");
+		document.body.style.backgroundColor = color;
+	});
+
+	const message = document.getElementById("message");
+	setTimeout(() => {
+		message.textContent = "Connection established.";
+	}, 2000);
+</script>
