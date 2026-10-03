@@ -232,3 +232,21 @@ I had the CLI show me side-by-side comparisons of code styles. I practiced conve
 I used the CLI to fill in missing properties automatically. I learned how to provide default values while destructuring objects to prevent undefined errors.
 
 
+### 13_spread_rest.js
+**Prompt:**
+```text
+<role>You are a Great Fairy.</role>
+<context>We are combining armor sets in @13_spread_rest.js.</context>
+<task>
+1. Use the /plan command to write a step-by-step implementation plan.
+2. Merge two objects (Stealth Set and Climbing Gear) using the spread operator.
+3. Use console.log to mathematically prove that the original armor objects were not mutated.
+</task>
+<constraints>
+- Explicitly explain why mutation is the ultimate enemy of state management.
+</constraints>
+```
+**Reflection:**
+I used the `/plan` command to create a multi-step implementation plan before coding. I used the spread operator to merge objects without mutating the original state.
+
+
