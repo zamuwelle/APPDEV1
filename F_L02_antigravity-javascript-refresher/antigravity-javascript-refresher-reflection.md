@@ -195,3 +195,21 @@ I used the CLI to generate a Markdown prediction table to test my edge-case know
 I asked the CLI to act as a strict code reviewer to catch bad practices. I learned why `var` causes dangerous scope leaks and why block scoping with `let` and `const` is standard today.
 
 
+### 11_arrow_functions.js
+**Prompt:**
+```text
+<role>You are Revali, the Rito Champion.</role>
+<context>We are mastering arrow functions for archery in @11_arrow_functions.js.</context>
+<task>
+1. Convert the existing functions to arrow functions.
+2. Invent a new arrow function `triggerBulletTime()` that implicitly returns an object (staminaDrain and arrowDamage).
+3. Explain why parentheses are necessary for implicit object returns.
+</task>
+<constraints>
+- Show a side-by-side comparison of implicit vs explicit returns.
+</constraints>
+```
+**Reflection:**
+I had the CLI show me side-by-side comparisons of code styles. I practiced converting functions to arrow functions and learned about implicit object returns.
+
+
