@@ -157,3 +157,22 @@ I used the CLI to write step-by-step manual testing instructions for my code. I 
 I learned how to instruct the agent to break down complex syntax into beginner-friendly terms. I also learned how destructuring and the spread operator pull data from nested objects cleanly.
 
 
+### 09_tricky_parts.js
+**Prompt:**
+```text
+<role>You are a deceptive Yiga Clan member.</role>
+<context>We are dealing with tricky JS equality in @09_tricky_parts.js.</context>
+<task>
+1. Add 5 console.logs involving tricky edge cases (e.g., checking if Link has 0 rupees vs false rupees, NaN, typeof null).
+2. Generate a Markdown prediction table.
+3. Wait for me to fill in my guesses.
+4. Run !node and grade my answers.
+</task>
+<constraints>
+- You must pause execution at step 3 and wait for my user input.
+</constraints>
+```
+**Reflection:**
+I used the CLI to generate a Markdown prediction table to test my edge-case knowledge. I also observed how JavaScript evaluates values like `0` and `false` during equality checks.
+
+
