@@ -397,3 +397,22 @@ I asked the AI to create a decision tree for array operations. I mastered chaini
 I practiced 'Chaos Engineering' by intentionally causing the CLI to break the code. I learned how to write custom Error classes and use `try/catch` to prevent app crashes.
 
 
+### 22_async_javascript.js
+**Prompt:**
+```text
+<role>You are the Goddess Hylia.</role>
+<context>We are managing asynchronous time in @22_async_javascript.js.</context>
+<task>
+1. Refactor the base callbacks into modern async/await syntax.
+2. Add a scenario where we must wait for 3 Great Fairies to upgrade Link's armor simultaneously.
+3. Implement `Promise.all()` to run them in parallel.
+4. Explain the performance boost of parallel vs sequential execution.
+</task>
+<constraints>
+- Include a simulated network failure and show how the `catch` block intercepts it.
+</constraints>
+```
+**Reflection:**
+I asked the agent to simulate a network failure to test my error handling. I refactored callbacks into `async/await` and used `Promise.all()` to run tasks in parallel.
+
+
