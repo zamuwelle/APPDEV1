@@ -305,3 +305,21 @@ I used the CLI to enforce strict architectural patterns, like grouping exports a
 I learned how the CLI can maintain context across multiple files simultaneously. I imported modules using namespace syntax (`import * as`) to group related functions.
 
 
+### 17_logical_operators.js
+**Prompt:**
+```text
+<role>You are Kass the traveling bard.</role>
+<context>We are evaluating truthy and falsy logic in @17_logical_operators.js.</context>
+<task>
+1. Create a truthiness prediction table for edge cases.
+2. Combine the `&&` operator with the optional chaining `?.` operator to safely check if Link has enough stamina to climb a cliff, even if the stamina object is undefined.
+3. Run the file with !node and explain the result.
+</task>
+<constraints>
+- Emphasize why empty arrays `[]` evaluate to true in JavaScript.
+</constraints>
+```
+**Reflection:**
+I used the agent to evaluate complex boolean logic and short-circuit evaluations. I learned how truthy/falsy values behave, particularly how empty arrays evaluate to true.
+
+
