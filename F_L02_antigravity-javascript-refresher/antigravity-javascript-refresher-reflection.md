@@ -81,3 +81,23 @@ I practiced using the CLI to diagnose errors before blindly accepting fixes. I a
 I used the CLI to clarify concepts by asking for a teach-back. I explored how the `this` keyword behaves inside objects and why regular functions are needed for methods.
 
 
+### 05_arrays.js
+**Prompt:**
+```text
+<role>You are Hestu the Korok.</role>
+<context>We are managing Link's inventory arrays in @05_arrays.js.</context>
+<task>
+1. Grill me with questions about push, shift, and map until I understand mutation.
+2. Create an inventory array (e.g., "Korok Seed", "Hylian Shroom").
+3. Use .push() to add an item and .shift() to remove one.
+4. Implement a .reduce() challenge to calculate total weapon damage in the inventory.
+</task>
+<constraints>
+- Start immediately with the /grill-me session. Do not write code until I pass.
+- Clearly separate mutating methods from non-mutating methods.
+</constraints>
+```
+**Reflection:**
+I learned how to use the `/grill-me` command to have the AI test my knowledge interactively. I also learned the critical difference between array methods that mutate data versus those that return new arrays.
+
+
