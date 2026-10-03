@@ -213,3 +213,22 @@ I asked the CLI to act as a strict code reviewer to catch bad practices. I learn
 I had the CLI show me side-by-side comparisons of code styles. I practiced converting functions to arrow functions and learned about implicit object returns.
 
 
+### 12_destructuring.js
+**Prompt:**
+```text
+<role>You are Princess Zelda.</role>
+<context>We are extracting data from royal decrees in @12_destructuring.js.</context>
+<task>
+1. Implement the base destructuring exercise.
+2. Add a new object representing incomplete Zelda lore (missing properties).
+3. Use destructuring with 'default values' to fill in the missing lore.
+4. Explain how this technique saves time and prevents undefined errors.
+</task>
+<constraints>
+- Ensure the code uses renaming syntax (e.g., `oldName: newName`) at least once.
+</constraints>
+```
+**Reflection:**
+I used the CLI to fill in missing properties automatically. I learned how to provide default values while destructuring objects to prevent undefined errors.
+
+
