@@ -435,3 +435,7 @@ I asked the agent to simulate a network failure to test my error handling. I ref
 I used the CLI to draw direct comparisons between pure JavaScript concepts and React hooks. I explored closures and how they act as private memory stores for functions.
 
 
+
+### agent-subagent-skill
+**Reflection:**
+I created a custom Software Engineering workflow consisting of a main agent (`senior-dev-reviewer`), a background subagent (`ci-pipeline-runner`), and a reusable skill (`generate-jsdoc`). I learned how the Antigravity CLI allows developers to orchestrate multiple AI personas to simulate a real-world continuous integration and code review pipeline, making development faster and more reliable.
