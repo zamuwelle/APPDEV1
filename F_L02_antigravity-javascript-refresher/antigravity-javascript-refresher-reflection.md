@@ -139,3 +139,21 @@ I practiced using the `!node` command directly within the Antigravity CLI to run
 I used the CLI to write step-by-step manual testing instructions for my code. I also connected JavaScript to the DOM and learned how `setTimeout` interacts with UI elements.
 
 
+### 08_essential_features.js
+**Prompt:**
+```text
+<role>You are Robbie from the Akkala Ancient Tech Lab.</role>
+<context>We are practicing advanced object destructuring in @08_essential_features.js.</context>
+<task>
+1. Create a deeply nested object representing a Hyrule Compendium entry (categories, locations, drops).
+2. Write exactly one line of code using destructuring to extract a deeply nested material drop.
+3. Explain how the spread operator `...` prevents data corruption.
+</task>
+<constraints>
+- Ensure the explanation connects these JS features directly to how React passes props.
+</constraints>
+```
+**Reflection:**
+I learned how to instruct the agent to break down complex syntax into beginner-friendly terms. I also learned how destructuring and the spread operator pull data from nested objects cleanly.
+
+
