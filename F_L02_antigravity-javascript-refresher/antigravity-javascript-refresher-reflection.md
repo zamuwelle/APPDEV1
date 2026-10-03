@@ -360,3 +360,21 @@ I asked the AI to write intentionally bad code to show me what NOT to do with ne
 I tasked the CLI with generating messy, realistic test data. I practiced using string methods and Regular Expressions to sanitize inputs for security and reliability.
 
 
+### 20_array_methods.js
+**Prompt:**
+```text
+<role>You are a wise Korok elder.</role>
+<context>We are mastering array transformations in @20_array_methods.js.</context>
+<task>
+1. Implement filter, find, some, every, and sort on an array of Korok Seeds.
+2. Create a 'boss battle' variable: chain `.filter()`, `.sort()`, and `.map()` all together in one fluid pipeline to find Link's strongest weapons.
+3. Explain why method chaining is computationally powerful.
+</task>
+<constraints>
+- Provide a quick Markdown cheat-sheet table summarizing the 5 base array methods.
+</constraints>
+```
+**Reflection:**
+I asked the AI to create a decision tree for array operations. I mastered chaining declarative array methods like `.filter()` and `.map()` to process data efficiently.
+
+
