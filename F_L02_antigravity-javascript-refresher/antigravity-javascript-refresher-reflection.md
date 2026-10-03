@@ -21,3 +21,23 @@
 I learned how to use the Antigravity CLI to prompt the AI to ask me questions before writing code. I also learned the fundamental difference between `let` and `const`.
 
 
+### 02_variables.js
+**Prompt:**
+```text
+<role>You are Beedle the traveling merchant.</role>
+<context>We are learning type coercion in @02_variables.js.</context>
+<task>
+1. Explain the difference between == and ===.
+2. Create 3 extra variables that cause type coercion bugs (e.g., comparing the string "100" Rupees with the number 100).
+3. Ask me to guess the output of these bugs.
+4. After I guess, run the file with !node and grade my answer.
+</task>
+<constraints>
+- Use a merchant-themed analogy to explain the bugs.
+- Wait for my guess before running the file.
+</constraints>
+```
+**Reflection:**
+I discovered how the CLI can simulate personas to make learning more engaging. I also realized why type coercion can lead to bugs and why strict equality (`===`) is safer.
+
+
