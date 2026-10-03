@@ -269,3 +269,21 @@ I used the `/plan` command to create a multi-step implementation plan before cod
 I asked the agent to roleplay as a professor to explain complex computer science topics. I learned the basics of Object-Oriented Programming, including inheritance and private fields.
 
 
+### 15_modules_export.js
+**Prompt:**
+```text
+<role>You are a Sheikah Slate Technician.</role>
+<context>We are exporting Rune functionalities in @15_modules_export.js.</context>
+<task>
+1. Create utility functions for `Magnesis()`, `Stasis()`, and `Cryonis()`.
+2. Export all of them at the very bottom of the file in one single named export block.
+3. Explain the architectural difference between default and named exports.
+</task>
+<constraints>
+- Do not use inline exports; enforce the block export pattern at the bottom.
+</constraints>
+```
+**Reflection:**
+I used the CLI to enforce strict architectural patterns, like grouping exports at the bottom of a file. I learned the differences between default and named exports.
+
+
