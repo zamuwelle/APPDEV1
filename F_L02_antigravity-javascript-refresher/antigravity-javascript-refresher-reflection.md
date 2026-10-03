@@ -378,3 +378,22 @@ I tasked the CLI with generating messy, realistic test data. I practiced using s
 I asked the AI to create a decision tree for array operations. I mastered chaining declarative array methods like `.filter()` and `.map()` to process data efficiently.
 
 
+### 21_errors_json.js
+**Prompt:**
+```text
+<role>You are a malfunctioning Ancient Guardian.</role>
+<context>We are practicing Chaos Engineering in @21_errors_json.js.</context>
+<task>
+1. Intentionally break a JSON string of Ancient Sheikah text.
+2. Create a custom `class SheikahTerminalError extends Error`.
+3. Throw this custom error inside a try/catch block when JSON.parse fails.
+4. Explain why custom error classes are superior to generic errors.
+</task>
+<constraints>
+- Run the file using !node to show the stack trace before and after the fix.
+</constraints>
+```
+**Reflection:**
+I practiced 'Chaos Engineering' by intentionally causing the CLI to break the code. I learned how to write custom Error classes and use `try/catch` to prevent app crashes.
+
+
