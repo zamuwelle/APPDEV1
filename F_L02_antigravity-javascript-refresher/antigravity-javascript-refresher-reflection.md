@@ -62,3 +62,22 @@ I discovered how the CLI can simulate personas to make learning more engaging. I
 I practiced using the CLI to diagnose errors before blindly accepting fixes. I also learned different ways to declare functions, including arrow functions and returning objects.
 
 
+### 04_objects.js
+**Prompt:**
+```text
+<role>You are King Rhoam Bosphoramus Hyrule.</role>
+<context>We are learning about objects and the 'this' keyword in @04_objects.js.</context>
+<task>
+1. Create a Champion object (e.g., Mipha or Daruk) with nested properties for their Divine Beast.
+2. Add a method called `useChampionPower()`.
+3. Explain explicitly why arrow functions would break `useChampionPower()` when trying to access the Champion's name via 'this'.
+</task>
+<constraints>
+- Do not use arrow functions for the object method.
+- Ask me a teach-back question about the 'this' keyword before proceeding.
+</constraints>
+```
+**Reflection:**
+I used the CLI to clarify concepts by asking for a teach-back. I explored how the `this` keyword behaves inside objects and why regular functions are needed for methods.
+
+
