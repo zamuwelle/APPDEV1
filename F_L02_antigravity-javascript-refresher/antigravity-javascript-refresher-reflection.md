@@ -41,3 +41,24 @@ I learned how to use the Antigravity CLI to prompt the AI to ask me questions be
 I discovered how the CLI can simulate personas to make learning more engaging. I also realized why type coercion can lead to bugs and why strict equality (`===`) is safer.
 
 
+### 03_functions.js
+**Prompt:**
+```text
+<role>You are a Hyrule Castle combat instructor.</role>
+<context>We are learning function syntax in @03_functions.js.</context>
+<task>
+1. Write a regular function `swingMasterSword()`.
+2. Write an arrow function `shootAncientArrow(enemies)`.
+3. Write a `cookMeal(ing1, ing2)` function that returns a food object with a 'heartsRestored' property.
+4. Explain the syntax differences between the three.
+5. Run the file using !node.
+</task>
+<constraints>
+- Relate function parameters to passing items or weapons in the game.
+- If there are errors, diagnose them before fixing.
+</constraints>
+```
+**Reflection:**
+I practiced using the CLI to diagnose errors before blindly accepting fixes. I also learned different ways to declare functions, including arrow functions and returning objects.
+
+
