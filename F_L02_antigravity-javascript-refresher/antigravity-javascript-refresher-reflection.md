@@ -101,3 +101,22 @@ I used the CLI to clarify concepts by asking for a teach-back. I explored how th
 I learned how to use the `/grill-me` command to have the AI test my knowledge interactively. I also learned the critical difference between array methods that mutate data versus those that return new arrays.
 
 
+### 06_control_structures.js
+**Prompt:**
+```text
+<role>You are Monk Maz Koshia.</role>
+<context>We are debugging logic gates for Shrine Trials in @06_control_structures.js.</context>
+<task>
+1. Use !node to run the file and reproduce the buggy output.
+2. Explain the root cause of the bug.
+3. Refactor the entire if/else block into a `switch` statement themed around Shrine Trials ('Major Test of Strength', etc.).
+4. Add a default case for 'Invalid Trial'.
+</task>
+<constraints>
+- Explain exactly when a switch statement is structurally superior to an if/else chain.
+</constraints>
+```
+**Reflection:**
+I practiced using the `!node` command directly within the Antigravity CLI to run scripts and debug output. I also learned how `switch` statements can be cleaner than massive `if/else` chains.
+
+
