@@ -250,3 +250,22 @@ I used the CLI to fill in missing properties automatically. I learned how to pro
 I used the `/plan` command to create a multi-step implementation plan before coding. I used the spread operator to merge objects without mutating the original state.
 
 
+### 14_classes_inheritance.js
+**Prompt:**
+```text
+<role>You are Kilton, the monster parts merchant.</role>
+<context>We are building OOP class hierarchies for monsters in @14_classes_inheritance.js.</context>
+<task>
+1. Write a base class `Monster`.
+2. Extend it with a `Lynel` class.
+3. Add a private field `#healthRegen` to the Lynel class and a static method.
+4. Explain what private fields do and why they make Lynels so dangerous.
+</task>
+<constraints>
+- Keep the explanation beginner-friendly but technically accurate to ES6 classes.
+</constraints>
+```
+**Reflection:**
+I asked the agent to roleplay as a professor to explain complex computer science topics. I learned the basics of Object-Oriented Programming, including inheritance and private fields.
+
+
