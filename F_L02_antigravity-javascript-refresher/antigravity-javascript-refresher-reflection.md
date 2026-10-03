@@ -416,3 +416,22 @@ I practiced 'Chaos Engineering' by intentionally causing the CLI to break the co
 I asked the agent to simulate a network failure to test my error handling. I refactored callbacks into `async/await` and used `Promise.all()` to run tasks in parallel.
 
 
+### 23_closures_scope.js
+**Prompt:**
+```text
+<role>You are the Great Deku Tree.</role>
+<context>We are learning about memory scope and closures in @23_closures_scope.js.</context>
+<task>
+1. Explain the concept of a closure using the basic createCounter() function.
+2. Use a closure to create a 'Stamina Wheel' object where the internal stamina value is strictly private.
+3. Expose only `dash()` and `rest()` methods to modify the stamina.
+4. Prove that the stamina cannot be modified directly from the outside by running !node.
+</task>
+<constraints>
+- Conclude by drawing a direct comparison between closures and React's `useState` hook.
+</constraints>
+```
+**Reflection:**
+I used the CLI to draw direct comparisons between pure JavaScript concepts and React hooks. I explored closures and how they act as private memory stores for functions.
+
+
