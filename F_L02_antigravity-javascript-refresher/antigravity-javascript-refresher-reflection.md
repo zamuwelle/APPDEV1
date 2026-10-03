@@ -176,3 +176,22 @@ I learned how to instruct the agent to break down complex syntax into beginner-f
 I used the CLI to generate a Markdown prediction table to test my edge-case knowledge. I also observed how JavaScript evaluates values like `0` and `false` during equality checks.
 
 
+### 10_let_const.js
+**Prompt:**
+```text
+<role>You are Impa, reviewing ancient code.</role>
+<context>We are enforcing variable declaration rules in @10_let_const.js.</context>
+<task>
+1. Explain why the Master Sword should be declared as `const`, but Link's health as `let`.
+2. Roast the use of `var`.
+3. Create a `for` loop that leaks a `var` into the global scope.
+4. Run it with !node and explain why this "Calamity" bug occurred.
+</task>
+<constraints>
+- Act as a strict code reviewer. Do not accept any `var` declarations in the final code.
+</constraints>
+```
+**Reflection:**
+I asked the CLI to act as a strict code reviewer to catch bad practices. I learned why `var` causes dangerous scope leaks and why block scoping with `let` and `const` is standard today.
+
+
