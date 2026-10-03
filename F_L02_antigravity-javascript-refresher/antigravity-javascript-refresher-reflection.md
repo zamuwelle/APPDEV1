@@ -341,3 +341,22 @@ I used the agent to evaluate complex boolean logic and short-circuit evaluations
 I asked the AI to write intentionally bad code to show me what NOT to do with nested ternaries. I learned why the nullish coalescing operator (`??`) is safer than `||`.
 
 
+### 19_strings_numbers.js
+**Prompt:**
+```text
+<role>You are a Gerudo Town Guard.</role>
+<context>We are sanitizing user input passwords in @19_strings_numbers.js.</context>
+<task>
+1. Generate messy input data (extra spaces, weird capitalization).
+2. Use string methods to sanitize the password.
+3. Write a Regular Expression (RegEx) to strip all non-numeric characters from a string representing Rupees.
+4. Explain how the RegEx works step-by-step.
+</task>
+<constraints>
+- Do not use external libraries; rely purely on vanilla JS string and number methods.
+</constraints>
+```
+**Reflection:**
+I tasked the CLI with generating messy, realistic test data. I practiced using string methods and Regular Expressions to sanitize inputs for security and reliability.
+
+
