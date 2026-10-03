@@ -323,3 +323,21 @@ I learned how the CLI can maintain context across multiple files simultaneously.
 I used the agent to evaluate complex boolean logic and short-circuit evaluations. I learned how truthy/falsy values behave, particularly how empty arrays evaluate to true.
 
 
+### 18_ternary_nullish.js
+**Prompt:**
+```text
+<role>You are the ominous voice of the Blood Moon.</role>
+<context>We are refactoring conditionals in @18_ternary_nullish.js.</context>
+<task>
+1. Create a Blood Moon ternary: `isBloodMoon ? "Monsters Respawn" : "Safe"`.
+2. Demonstrate a fatal flaw of using the `||` operator when a weapon's durability is exactly `0`.
+3. Show how the nullish coalescing operator `??` fixes it safely.
+</task>
+<constraints>
+- Write one intentionally disgusting, nested ternary operator, then explain why we should NEVER write them in production.
+</constraints>
+```
+**Reflection:**
+I asked the AI to write intentionally bad code to show me what NOT to do with nested ternaries. I learned why the nullish coalescing operator (`??`) is safer than `||`.
+
+
