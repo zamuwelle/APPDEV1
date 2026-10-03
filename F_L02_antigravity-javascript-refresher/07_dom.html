@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sheikah Slate Terminal</title>
+	<style>
+		body {
+			background-color: #0b132b;
+			color: #00f0ff;
+			font-family: 'Courier New', Courier, monospace;
+			padding: 2rem;
+			transition: background-color 0.5s ease;
+		}
+
+		.sheikah-card {
+			border: 2px solid #00f0ff;
+			border-radius: 8px;
+			padding: 1.5rem;
+			box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+			max-width: 500px;
+			background-color: #1c2541;
+		}
+
+		button {
+			background-color: #00f0ff;
+			color: #0b132b;
+			border: none;
+			padding: 0.75rem 1.25rem;
+			font-weight: bold;
+			font-size: 1rem;
+			border-radius: 4px;
+			cursor: pointer;
+			margin-right: 0.5rem;
+			margin-top: 0.5rem;
+			box-shadow: 0 0 10px #00f0ff;
+			transition: transform 0.1s ease;
+		}
+
+		button:active {
+			transform: scale(0.95);
+		}
+
+		.stasis-active {
+			background-color: #ffb703 !important;
+			color: #000000 !important;
+			box-shadow: 0 0 20px #ffb703 !important;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="sheikah-card">
+		<h1>SHEIKAH SLATE v2.0</h1>
+		<p id="message">Initializing connection...</p>
+
+		<button id="changeColorBtn">Change Slate Color</button>
+		<button id="stasisBtn">Cast Stasis Rune</button>
+	</div>
+
+	<script>
+		// 1. Connection sequence
+		const message = document.getElementById("message");
+		setTimeout(() => {
+			message.textContent = "Sheikah Slate Connected. Welcome, Link!";
+		}, 2000);
+
+		// 2. Color Change Event Listener
+		const changeColorBtn = document.getElementById("changeColorBtn");
+		changeColorBtn.addEventListener("click", () => {
+			const color = prompt("Enter Sheikah terminal color (e.g., #0b132b, #1d3557, #3a0ca3):");
+			if (color) {
+				document.body.style.backgroundColor = color;
+			}
+		});
+
+		// 3. Stasis Rune Event Listener (Asynchronous Timer Demonstration)
+		const stasisBtn = document.getElementById("stasisBtn");
+		const card = document.querySelector(".sheikah-card");
+
+		stasisBtn.addEventListener("click", () => {
+			console.log("⚡ [STASIS] Rune cast! Freezing object for 3 seconds...");
+			card.classList.add("stasis-active");
+			message.textContent = "⌛ STASIS ACTIVE: Object frozen in time!";
+			stasisBtn.disabled = true;
+
+			// ASYNCHRONOUS TIMEOUT: Does not block the browser UI thread!
+			// Browser delegates timer to Web API container and triggers callback after 3000ms.
+			setTimeout(() => {
+				console.log("⏰ [STASIS] Timer expired! Object un-frozen.");
+				card.classList.remove("stasis-active");
+				message.textContent = "Sheikah Slate Connected. Welcome, Link!";
+				stasisBtn.disabled = false;
+			}, 3000);
+		});
+	</script>
+</body>
+
+</html>

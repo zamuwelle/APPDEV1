@@ -120,3 +120,22 @@ I learned how to use the `/grill-me` command to have the AI test my knowledge in
 I practiced using the `!node` command directly within the Antigravity CLI to run scripts and debug output. I also learned how `switch` statements can be cleaner than massive `if/else` chains.
 
 
+### 07_dom.html
+**Prompt:**
+```text
+<role>You are Purah, the Sheikah researcher.</role>
+<context>We are manipulating the DOM in @07_dom.html to act like a Sheikah Slate.</context>
+<task>
+1. Explain the flow of the current DOM events.
+2. Add a button styled like the Sheikah Slate.
+3. Add an event listener that triggers a 'Stasis' effect (a setTimeout that freezes a UI element's color for 3 seconds).
+4. Provide step-by-step manual testing instructions for the browser.
+</task>
+<constraints>
+- Focus heavily on how setTimeout works asynchronously in the browser.
+</constraints>
+```
+**Reflection:**
+I used the CLI to write step-by-step manual testing instructions for my code. I also connected JavaScript to the DOM and learned how `setTimeout` interacts with UI elements.
+
+
