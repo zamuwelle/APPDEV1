@@ -4,17 +4,21 @@
   --color-panel: #a9c0f0;
   --color-surface: #fff;
   --color-text: #000;
-  --color-border: #333;
+  --color-border: #cecece;
   --color-placeholder: #9a9a9a;
+  --color-muted: #838383;
 
   /* Shared typography */
   --font-family: "Comic Neue", sans-serif;
   --font-size-body: 16px;
-  --font-size-heading: 28px;
-  --font-size-tagline: 32px;
+  --font-size-small: 12px;
+  --font-size-divider: 30px;
+  --font-size-heading: 30px;
+  --font-size-tagline: 50px;
   --font-weight-light: 300;
+  --font-weight-normal: 400;
   --font-weight-bold: 700;
-  --line-height-tagline: 1.25;
+  --line-height-tagline: 1.2;
   --letter-spacing: 1px;
 
   /* Shared spacing */
@@ -25,21 +29,28 @@
   --space-xl: 28px;
   --space-2xl: 36px;
   --space-3xl: 60px;
-  --space-heading: 110px;
+  --space-heading: 103px;
 
   /* Shared form and panel dimensions */
-  --auth-width: 86vw;
-  --auth-height: 82vh;
+  --auth-width: 1920px;
+  --auth-height: 1080px;
   --auth-min-height: 600px;
-  --auth-side-width: 34%;
+  --auth-side-width: 648px;
   --auth-side-padding-top: 12vh;
   --form-width: 575px;
+  --input-height: 60px;
+  --line-height-heading: 36px;
+  --line-height-body: 24px;
   --form-max-width: 90%;
   --button-height: 60px;
+  --social-button-width: 245px;
+  --social-button-height: 56px;
+  --divider-width: 30px;
+  --divider-height: 5px;
   --radius-control: 8px;
-  --radius-panel: 60px;
+  --radius-panel: 50px;
   --border-width: 1px;
-  --logo-height: 30vh;
-  --logo-max-height: 304px;
+  --logo-height: 415px;
+  --logo-max-height: 415px;
   --shadow-logo: drop-shadow(0 20px 20px rgba(60, 80, 140, 0.35));
 }

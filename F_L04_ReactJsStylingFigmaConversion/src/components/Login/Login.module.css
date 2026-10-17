@@ -1,23 +1,32 @@
-.login {
+.layout {
+    --reference-width: 2228px;
+    --brand-top: 200px;
+    --logo-top: 559px;
+    --form-left: 375px;
+    --form-top: 320px;
+    position: relative;
     display: flex;
     width: var(--auth-width);
     height: var(--auth-height);
-    min-height: var(--auth-min-height);
     background: var(--color-panel);
     overflow: hidden;
+    zoom: min(calc(100vw / var(--reference-width)), calc(100vh / 1325px));
 }
 
-/* ---------- Left panel ---------- */
+
+
+
+
 .left {
+    position: relative;
     width: var(--auth-side-width);
-    padding: var(--auth-side-padding-top) var(--space-3xl) var(--space-2xl);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-shrink: 0;
 }
 
 .tagline {
-    align-self: flex-start;
+    position: absolute;
+    top: var(--brand-top);
+    left: 80px;
     font-size: var(--font-size-tagline);
     font-weight: var(--font-weight-light);
     line-height: var(--line-height-tagline);
@@ -30,46 +39,54 @@
 }
 
 .logo {
+    position: absolute;
+    top: var(--logo-top);
+    left: 108px;
     height: var(--logo-height);
-    max-height: var(--logo-max-height);
     width: auto;
-    margin: auto 0;
-    filter: var(--shadow-logo);
 }
 
 .link {
+    position: absolute;
+    top: 1018px;
+    left: 0;
+    width: 630px;
+    text-align: center;
     font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
     letter-spacing: var(--letter-spacing);
     color: var(--color-surface);
 }
 
-/* ---------- Right panel ---------- */
 .right {
+    position: relative;
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: var(--color-surface);
     border-radius: var(--radius-panel) 0 0 var(--radius-panel);
 }
 
 .form {
+    position: absolute;
+    left: var(--form-left);
+    top: var(--form-top);
     width: var(--form-width);
     max-width: var(--form-max-width);
 }
 
 .form h2 {
     font-size: var(--font-size-heading);
+    line-height: var(--line-height-heading);
     font-weight: var(--font-weight-bold);
     letter-spacing: var(--letter-spacing);
-    margin-bottom: var(--space-heading);
 }
 
 .form input {
     display: block;
     width: 100%;
+    height: var(--input-height);
     padding: var(--space-input) 0 var(--space-sm);
-    margin-bottom: var(--space-xl);
+    line-height: var(--line-height-body);
+    margin-bottom: var(--space-md);
     border: none;
     border-bottom: var(--border-width) solid var(--color-border);
     outline: none;
@@ -89,7 +106,7 @@
 .form button {
     width: 100%;
     height: var(--button-height);
-    margin-top: var(--space-md);
+    margin-top: var(--space-xl);
     border: none;
     border-radius: var(--radius-control);
     background: var(--color-primary);
@@ -101,15 +118,20 @@
     cursor: pointer;
 }
 
-.signup {
+.switchScreen {
     margin-top: var(--space-lg);
     text-align: center;
+    line-height: var(--line-height-body);
     font-size: var(--font-size-body);
     letter-spacing: var(--letter-spacing);
 }
 
-.signup a {
+.switchScreen a {
     color: var(--color-primary);
     font-weight: var(--font-weight-bold);
     text-decoration: none;
+}
+
+.form h2 {
+    margin-bottom: var(--space-heading);
 }

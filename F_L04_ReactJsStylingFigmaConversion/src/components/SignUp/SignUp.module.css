@@ -1,0 +1,176 @@
+.layout {
+    --reference-width: 2200px;
+    --brand-top: 160px;
+    --logo-top: 519px;
+    --form-left: 394px;
+    --form-top: 200px;
+    position: relative;
+    display: flex;
+    width: var(--auth-width);
+    height: var(--auth-height);
+    background: var(--color-panel);
+    overflow: hidden;
+    zoom: min(calc(100vw / var(--reference-width)), calc(100vh / 1325px));
+}
+
+
+
+
+
+.left {
+    position: relative;
+    width: var(--auth-side-width);
+    flex-shrink: 0;
+}
+
+.tagline {
+    position: absolute;
+    top: var(--brand-top);
+    left: 80px;
+    font-size: var(--font-size-tagline);
+    font-weight: var(--font-weight-light);
+    line-height: var(--line-height-tagline);
+    color: var(--color-surface);
+}
+
+.tagline strong {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+}
+
+.logo {
+    position: absolute;
+    top: var(--logo-top);
+    left: 108px;
+    height: var(--logo-height);
+    width: auto;
+}
+
+.link {
+    position: absolute;
+    top: 1018px;
+    left: 0;
+    width: 630px;
+    text-align: center;
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+    letter-spacing: var(--letter-spacing);
+    color: var(--color-surface);
+}
+
+.right {
+    position: relative;
+    flex: 1;
+    background: var(--color-surface);
+    border-radius: var(--radius-panel) 0 0 var(--radius-panel);
+}
+
+.form {
+    position: absolute;
+    left: var(--form-left);
+    top: var(--form-top);
+    width: var(--form-width);
+    max-width: var(--form-max-width);
+}
+
+.form h2 {
+    font-size: var(--font-size-heading);
+    line-height: var(--line-height-heading);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing);
+}
+
+.form input {
+    display: block;
+    width: 100%;
+    height: var(--input-height);
+    padding: var(--space-input) 0 var(--space-sm);
+    line-height: var(--line-height-body);
+    margin-bottom: var(--space-md);
+    border: none;
+    border-bottom: var(--border-width) solid var(--color-border);
+    outline: none;
+    font-family: inherit;
+    font-size: var(--font-size-body);
+    letter-spacing: var(--letter-spacing);
+}
+
+.form input::placeholder {
+    color: var(--color-placeholder);
+}
+
+.form input:focus {
+    border-bottom-color: var(--color-primary);
+}
+
+.form button {
+    width: 100%;
+    height: var(--button-height);
+    margin-top: var(--space-xl);
+    border: none;
+    border-radius: var(--radius-control);
+    background: var(--color-primary);
+    color: var(--color-surface);
+    font-family: inherit;
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing);
+    cursor: pointer;
+}
+
+.switchScreen {
+    margin-top: var(--space-lg);
+    text-align: center;
+    line-height: var(--line-height-body);
+    font-size: var(--font-size-body);
+    letter-spacing: var(--letter-spacing);
+}
+
+.switchScreen a {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+}
+
+.form h2 {
+    margin-bottom: 76px;
+}
+
+.socialButtons {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-xl);
+}
+
+.form .socialButton {
+    width: var(--social-button-width);
+    height: var(--social-button-height);
+    margin-top: 0;
+    border: var(--border-width) solid var(--color-primary);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: normal;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    margin: 84px 0 var(--space-3xl);
+    line-height: var(--line-height-heading);
+    color: var(--color-muted);
+    font-size: var(--font-size-divider);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing);
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    width: var(--divider-width);
+    height: var(--divider-height);
+    background: currentColor;
+}
