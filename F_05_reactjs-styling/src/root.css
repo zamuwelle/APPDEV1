@@ -1,0 +1,35 @@
+:root {
+  --color-hello: #7a999c;
+  --color-comma: #5f7c8d;
+  --color-guyss: #567281;
+  --color-primary: #5f7c8d;
+  --color-inactive-tab: #c1ccd3;
+  --color-placeholder: #a7b7c1;
+  --color-button-bg: #4b687a;
+  --color-white: #ffffff;
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-white);
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+}

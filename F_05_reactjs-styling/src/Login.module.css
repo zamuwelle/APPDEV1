@@ -1,0 +1,295 @@
+.page {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--color-white);
+}
+
+.banner {
+  width: 43.36%;
+  min-width: 380px;
+  height: 100vh;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #7c9d9f;
+}
+
+.bannerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.main {
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh 5vw;
+}
+
+.content {
+  width: 100%;
+  max-width: 575px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: min(69px, 7.5vh);
+}
+
+.title {
+  font-family: var(--font-family);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.greeting {
+  font-size: 62px;
+  font-weight: 700;
+  color: var(--color-hello);
+}
+
+.comma {
+  font-size: 62px;
+  font-weight: 700;
+  color: var(--color-comma);
+  margin-left: -18px;
+}
+
+.recipient {
+  font-size: 45px;
+  font-weight: 400;
+  color: var(--color-guyss);
+}
+
+.tabsWrapper {
+  width: 432px;
+  max-width: 100%;
+  margin-left: 71px;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+  margin-bottom: min(128px, 13vh);
+  padding-left: 16px;
+}
+
+.tab {
+  position: relative;
+  padding: 0 17px 11px 17px;
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-inactive-tab);
+}
+
+.activeTab {
+  color: var(--color-primary);
+}
+
+.activeTab::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: var(--color-primary);
+}
+
+.form {
+  width: 432px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 71px;
+}
+
+.inputGroup {
+  width: 100%;
+  border-bottom: 3px solid var(--color-primary);
+  padding-bottom: 15px;
+  margin-bottom: min(62px, 6.5vh);
+}
+
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--font-family);
+  font-size: 22.5px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-primary);
+  padding: 0 4px;
+}
+
+.input::placeholder {
+  color: var(--color-placeholder);
+  opacity: 1;
+}
+
+.loginButton {
+  width: 100%;
+  height: 53px;
+  background-color: var(--color-button-bg);
+  color: var(--color-white);
+  border: none;
+  border-radius: 0;
+  font-family: var(--font-family);
+  font-size: 22.5px;
+  font-weight: 700;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.socialSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: min(40px, 4.5vh);
+}
+
+.divider {
+  font-family: var(--font-family);
+  font-size: 22.5px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-placeholder);
+  margin-bottom: min(47px, 5vh);
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 54px;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1100px) {
+  .main {
+    padding: 2vh 32px;
+  }
+
+  .content {
+    align-items: center;
+    max-width: 432px;
+  }
+
+  .tabsWrapper,
+  .form {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .banner {
+    width: 100%;
+    min-width: 0;
+    height: 240px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .main {
+    height: auto;
+    padding: 36px 24px 48px 24px;
+    justify-content: flex-start;
+  }
+
+  .header {
+    margin-bottom: 36px;
+    text-align: center;
+  }
+
+  .title {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .greeting,
+  .comma {
+    font-size: 44px;
+  }
+
+  .comma {
+    margin-left: -12px;
+  }
+
+  .recipient {
+    font-size: 34px;
+  }
+
+  .tabs {
+    padding-left: 0;
+    margin-bottom: 48px;
+    gap: 24px;
+  }
+
+  .tab {
+    font-size: 28px;
+  }
+
+  .inputGroup {
+    margin-bottom: 40px;
+  }
+
+  .input {
+    font-size: 19px;
+  }
+
+  .loginButton {
+    font-size: 20px;
+    height: 50px;
+  }
+
+  .socialSection {
+    margin-top: 28px;
+  }
+
+  .divider {
+    font-size: 19px;
+    margin-bottom: 28px;
+  }
+
+  .socialIcons {
+    gap: 40px;
+  }
+}
